@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+header {
+    background-color: blue;
+    min-height: 350px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.profile-image {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(../assets/profile.png);
+    background-size: cover;
+}
+
+.profile-name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.main {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    max-width: 750px;
+    min-width: 650px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.subtext {
+    margin-top: 8px;
+}
+
+footer {
+    min-height: 100px;
+    background-color: #eaecee70;
+    color: #929eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.post {
+    display: flex;
+    border: 1px solid #eaecee;
+    border-radius: 8px;
+    min-height: 200px;
+    overflow: hidden;
+    transition: all 0.25 ease;
+    cursor: pointer;
+}
+
+.post:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,.1);
+}
+
+.post-image {
+    flex-basis: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-content {
+    flex-basis: 60%;
+    padding: 24px;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #adb5db;
+    font-weight: 600;
+}
+
+.post-title {
+    margin-top: 16px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+}
+
+.post-title h4 {
+    margin: 0;
+}
+
+.post-text {
+    margin-top: 4px;
+    color: gray;
+    font-weight: 400;
+    line-height: 1.4;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.nav-button.new-post-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    transition: all 0.25 ease;
+}
+
+.nav-button.new-post-button:hover {
+    background-color: skyblue;
+}
+
+.home-page header {
+    background-image: url(../assets/banner.jpeg);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+a.post-link {
+    text-decoration: none;
+}

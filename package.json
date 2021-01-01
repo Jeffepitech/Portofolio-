@@ -1,0 +1,26 @@
+{
+  "name": "my-blog-api",
+  "version": "1.0.0",
+  "description": "My Blog Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeffepitech/Portofolio-.git"
+  },
+  "author": "Jeff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeffepitech/Portofolio-/issues"
+  },
+  "homepage": "https://github.com/Jeffepitech/Portofolio-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

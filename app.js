@@ -3,6 +3,8 @@ const app = express();
 const Post = require("./api/models/posts");
 const postsData = new Post();
 
+app.use(express.json());
+
 app.use((req, res, next)=> {
     res.setHeader("Access-Control-Allow-Origin", "*");
     next();
@@ -24,5 +26,10 @@ app.get("/api/posts/:post_id", (req, res)=>{
         res.status(404).send("Not Found");
     }
 });
+
+app.post("api/posts", (req, res)=>{
+    console.log(req.body);
+    res.send("ok");
+})
 
 app.listen(3000, ()=>console.log("listening on http//localhost:3000"));
